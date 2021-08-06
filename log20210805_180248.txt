@@ -1,0 +1,59 @@
+2021.08.05:18:02:48.486: main Phoenix Miner 5.7b Windows/msvc - Release build
+2021.08.05:18:02:48.486: main Cmd line: -pool ethash.unmineable.com:3333 -wal SHIB:Address.Neo24 -pass x 
+2021.08.05:18:02:48.486: main No CUDA driver found
+2021.08.05:18:02:48.986: main OpenCL driver version: 21.6-7.x
+2021.08.05:18:02:48.993: main Available GPUs for mining:
+2021.08.05:18:02:48.993: main GPU1: AMD Radeon RX 6800M (pcie 3), OpenCL 2.0, 12 GB VRAM, 40 CUs
+2021.08.05:18:02:48.993: main GPU2: AMD Radeon(TM) Graphics (pcie 7), OpenCL 2.0, 12 GB VRAM, 8 CUs
+2021.08.05:18:02:48.993: main ADL library initialized
+2021.08.05:18:02:49.454: main Eth: the pool list contains 1 pool (1 from command-line)
+2021.08.05:18:02:49.454: main Eth: primary pool: ethash.unmineable.com:3333
+2021.08.05:18:02:49.455: main Starting GPU mining
+2021.08.05:18:02:49.455: main Matched GPU1 to ADL adapter index 3 (method 1)
+2021.08.05:18:02:49.455: main ADL Overdrive not supported on GPU1
+2021.08.05:18:02:49.455: main ADL adapter index not found for GPU1
+2021.08.05:18:02:49.455: main GPU1: using AMD driver ver 21.7.2
+2021.08.05:18:02:49.455: main Matched GPU2 to ADL adapter index 0 (method 1)
+2021.08.05:18:02:49.455: main ADL Overdrive not supported on GPU2
+2021.08.05:18:02:49.455: main ADL adapter index not found for GPU2
+2021.08.05:18:02:49.455: main GPU2: using AMD driver ver 21.7.2
+2021.08.05:18:02:49.577: wdog Starting watchdog thread
+2021.08.05:18:02:49.577: main Eth: Connecting to ethash pool ethash.unmineable.com:3333 (proto: EthProxy)
+2021.08.05:18:02:49.756: eths Eth: Connected to ethash pool ethash.unmineable.com:3333 (165.227.213.204)
+2021.08.05:18:02:49.756: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"eth1.0","params":["SHIB:Address.Neo24","x"]}
+
+2021.08.05:18:02:49.780: main Listening for CDM remote manager at port 3333 in read-only mode
+2021.08.05:18:02:51.327: eths Eth: Received: {"id":1,"jsonrpc":"2.0","result":true,"error":null}
+2021.08.05:18:02:51.327: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","params":[]}
+
+2021.08.05:18:02:51.387: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0xa611d1f4bdb9556449893fd93cea97994d8457fb4645cfc4a11a1af597f7c02b","0xa29b1a5c61f5a3a57fb298840aee746e2325b84f6c9c4b83b116d7dc3f9ad48b","0x7e00000007e00000007e00000007e00000007e00000007e00000007e","0xc5df6c"]}
+2021.08.05:18:02:51.387: eths Eth: New job #a611d1f4 from ethash.unmineable.com:3333; diff: 8726MH
+2021.08.05:18:02:51.388: GPU1 GPU1: Starting up... (0)
+2021.08.05:18:02:51.388: GPU1 GPU1: Generating ethash light cache for epoch #432
+2021.08.05:18:02:51.394: GPU2 GPU2: Starting up... (0)
+2021.08.05:18:02:51.502: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0xa611d1f4bdb9556449893fd93cea97994d8457fb4645cfc4a11a1af597f7c02b","0xa29b1a5c61f5a3a57fb298840aee746e2325b84f6c9c4b83b116d7dc3f9ad48b","0x7e00000007e00000007e00000007e00000007e00000007e00000007e","0xc5df6c"],"error":null}
+2021.08.05:18:02:53.583: GPU1 Light cache generated in 2.2 s (31.9 MB/s)
+2021.08.05:18:02:54.572: GPU1 GPU1: Failed to compile program: clBuildProgram (-11)
+2021.08.05:18:02:54.572: GPU1 GPU1: Free VRAM: 11.922 GB; used: 0.063 GB
+2021.08.05:18:02:54.572: GPU1 GPU1: Allocating DAG (4.39 GB); good for epoch up to #434
+2021.08.05:18:02:54.583: GPU1 GPU1: Generating DAG for epoch #432
+2021.08.05:18:02:54.715: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2021.08.05:18:02:54.715: main GPUs: 1: 0.000 MH/s (0) 2: 0.000 MH/s (0)
+2021.08.05:18:02:54.727: GPU2 GPU2: Using generic OpenCL kernels (device name 'gfx90c')
+2021.08.05:18:02:55.026: GPU2 GPU2: Free VRAM: 12.023 GB; used: 0.066 GB
+2021.08.05:18:02:55.026: GPU2 GPU2: Allocating DAG for epoch #432 (4.37 GB)
+2021.08.05:18:02:55.034: GPU2 GPU2: Generating DAG for epoch #432
+2021.08.05:18:02:56.284: GPU1 GPU1: DAG  46%
+2021.08.05:18:02:56.713: GPU2 GPU2: DAG   4%
+2021.08.05:18:02:57.789: GPU1 GPU1: DAG  89%
+2021.08.05:18:02:58.165: GPU1 GPU1: DAG generated in 3.6 s (1250.7 MB/s)
+2021.08.05:18:02:58.166: GPU1 GPU1: Unable to prepare kernels: clCreateKernel (-46)
+2021.08.05:18:02:58.167: wdog Fatal error detected. Restarting.
+2021.08.05:18:02:58.167: eths Eth: Received: {"id":0,"jsonrpc":"2.0","result":["0x3b0f84d297a626284b650b941dad3edd22a017dc26d0a94141f38c27cd815051","0xa29b1a5c61f5a3a57fb298840aee746e2325b84f6c9c4b83b116d7dc3f9ad48b","0x7e00000007e00000007e00000007e00000007e00000007e00000007e","0xc5df6c"]}
+2021.08.05:18:02:58.167: eths Eth: New job #3b0f84d2 from ethash.unmineable.com:3333; diff: 8726MH
+2021.08.05:18:02:58.251: GPU2 GPU2: DAG   8%
+2021.08.05:18:02:59.771: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","params":[]}
+
+2021.08.05:18:02:59.817: main Eth speed: 0.000 MH/s, shares: 0/0/0, time: 0:00
+2021.08.05:18:02:59.817: main GPUs: 1: 0.000 MH/s (0) 2: 0.000 MH/s (0)
+2021.08.05:18:02:59.858: eths Eth: Received: {"id":5,"jsonrpc":"2.0","result":["0x3b0f84d297a626284b650b941dad3edd22a017dc26d0a94141f38c27cd815051","0xa29b1a5c61f5a3a57fb298840aee746e2325b84f6c9c4b83b116d7dc3f9ad48b","0x7e00000007e00000007e00000007e00000007e00000007e00000007e","0xc5df6c"],"error":null}
